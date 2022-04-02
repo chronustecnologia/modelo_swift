@@ -18,16 +18,31 @@ final class MenuViewController: UIViewController {
     var interactor: MenuBusinessLogic?
     var router: (MenuRoutingLogic & MenuDataPassing)?
     
+    var screenview: MenuView
+    
     // MARK: - ViewController Lifecycle
     
+    init(view: MenuView = MenuView()) {
+        screenview = view
+        super.init(nibName: nil, bundle: nil)
+        setup()
+    }
+    
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
+        screenview = MenuView()
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
     }
     
     required init?(coder aDecoder: NSCoder) {
+        screenview = MenuView()
         super.init(coder: aDecoder)
         setup()
+    }
+    
+    override func loadView() {
+        screenview.delegate = self
+        self.view = screenview
     }
     
     override func viewDidLoad() {
@@ -65,5 +80,12 @@ extension MenuViewController: MenuDisplayLogic {
     
     func displayScreenValues(viewModel: Menu.Model.ViewModel) {
         self.title = viewModel.title
+    }
+}
+
+extension MenuViewController: MenuViewDelegate {
+    
+    func didTapSkeletonView() {
+        router?.routeToSkeletonView()
     }
 }

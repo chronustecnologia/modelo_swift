@@ -22,6 +22,19 @@
 		00D461A427F71208009418CD /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D461A227F71208009418CD /* Localizable.swift */; };
 		00D461A527F71208009418CD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D461A327F71208009418CD /* String+Extension.swift */; };
 		011E8A979FA7B7619502DE9D /* Pods_ModeloApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7286BBF106A11A854A3A215A /* Pods_ModeloApp.framework */; };
+		B6CBF3A227F8EA5E0049A5BD /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A127F8EA5E0049A5BD /* MenuView.swift */; };
+		B6CBF3A427F8EA930049A5BD /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A327F8EA930049A5BD /* ViewConfiguration.swift */; };
+		B6CBF3AC27F8EF580049A5BD /* SkeletonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A627F8EF580049A5BD /* SkeletonPresenter.swift */; };
+		B6CBF3AD27F8EF580049A5BD /* SkeletonWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A727F8EF580049A5BD /* SkeletonWorker.swift */; };
+		B6CBF3AE27F8EF580049A5BD /* SkeletonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A827F8EF580049A5BD /* SkeletonRouter.swift */; };
+		B6CBF3AF27F8EF580049A5BD /* SkeletonModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A927F8EF580049A5BD /* SkeletonModels.swift */; };
+		B6CBF3B027F8EF580049A5BD /* SkeletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3AA27F8EF580049A5BD /* SkeletonViewController.swift */; };
+		B6CBF3B127F8EF580049A5BD /* SkeletonInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3AB27F8EF580049A5BD /* SkeletonInteractor.swift */; };
+		B6CBF3B527F8EF700049A5BD /* Skeleton.strings in Resources */ = {isa = PBXBuildFile; fileRef = B6CBF3B327F8EF700049A5BD /* Skeleton.strings */; };
+		B6CBF3B627F8EF700049A5BD /* SkeletonKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3B427F8EF700049A5BD /* SkeletonKeys.swift */; };
+		B6CBF3B827F8EFF40049A5BD /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3B727F8EFF40049A5BD /* SkeletonView.swift */; };
+		B6CBF3BA27F8F5150049A5BD /* SkeletonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3B927F8F5150049A5BD /* SkeletonViewCell.swift */; };
+		B6CBF3BD27F8F6800049A5BD /* ModeloCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3BC27F8F6800049A5BD /* ModeloCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +55,19 @@
 		00D461A227F71208009418CD /* Localizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
 		00D461A327F71208009418CD /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		7286BBF106A11A854A3A215A /* Pods_ModeloApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModeloApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6CBF3A127F8EA5E0049A5BD /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		B6CBF3A327F8EA930049A5BD /* ViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		B6CBF3A627F8EF580049A5BD /* SkeletonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonPresenter.swift; sourceTree = "<group>"; };
+		B6CBF3A727F8EF580049A5BD /* SkeletonWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonWorker.swift; sourceTree = "<group>"; };
+		B6CBF3A827F8EF580049A5BD /* SkeletonRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonRouter.swift; sourceTree = "<group>"; };
+		B6CBF3A927F8EF580049A5BD /* SkeletonModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonModels.swift; sourceTree = "<group>"; };
+		B6CBF3AA27F8EF580049A5BD /* SkeletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonViewController.swift; sourceTree = "<group>"; };
+		B6CBF3AB27F8EF580049A5BD /* SkeletonInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonInteractor.swift; sourceTree = "<group>"; };
+		B6CBF3B327F8EF700049A5BD /* Skeleton.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Skeleton.strings; sourceTree = "<group>"; };
+		B6CBF3B427F8EF700049A5BD /* SkeletonKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonKeys.swift; sourceTree = "<group>"; };
+		B6CBF3B727F8EFF40049A5BD /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
+		B6CBF3B927F8F5150049A5BD /* SkeletonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonViewCell.swift; sourceTree = "<group>"; };
+		B6CBF3BC27F8F6800049A5BD /* ModeloCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeloCell.swift; sourceTree = "<group>"; };
 		BCECDBD1BECE0272CA8A680C /* Pods-ModeloApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModeloApp.release.xcconfig"; path = "Target Support Files/Pods-ModeloApp/Pods-ModeloApp.release.xcconfig"; sourceTree = "<group>"; };
 		BE68E9CD580CC13E1657C086 /* Pods-ModeloApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModeloApp.debug.xcconfig"; path = "Target Support Files/Pods-ModeloApp/Pods-ModeloApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,6 +119,7 @@
 		00D4618E27F71102009418CD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				B6CBF3A527F8EF3E0049A5BD /* Skeleton */,
 				00D4618F27F7110F009418CD /* Menu */,
 			);
 			path = Scenes;
@@ -108,6 +135,7 @@
 				00D4619327F7112F009418CD /* MenuModels.swift */,
 				00D4619427F7112F009418CD /* MenuViewController.swift */,
 				00D4619527F7112F009418CD /* MenuInteractor.swift */,
+				B6CBF3A127F8EA5E0049A5BD /* MenuView.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -126,6 +154,7 @@
 			children = (
 				00D461A227F71208009418CD /* Localizable.swift */,
 				00D461A327F71208009418CD /* String+Extension.swift */,
+				B6CBF3A327F8EA930049A5BD /* ViewConfiguration.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -145,6 +174,40 @@
 				BCECDBD1BECE0272CA8A680C /* Pods-ModeloApp.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		B6CBF3A527F8EF3E0049A5BD /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				B6CBF3BB27F8F6610049A5BD /* cell */,
+				B6CBF3B227F8EF5E0049A5BD /* Resources */,
+				B6CBF3A627F8EF580049A5BD /* SkeletonPresenter.swift */,
+				B6CBF3A727F8EF580049A5BD /* SkeletonWorker.swift */,
+				B6CBF3A827F8EF580049A5BD /* SkeletonRouter.swift */,
+				B6CBF3A927F8EF580049A5BD /* SkeletonModels.swift */,
+				B6CBF3AA27F8EF580049A5BD /* SkeletonViewController.swift */,
+				B6CBF3AB27F8EF580049A5BD /* SkeletonInteractor.swift */,
+				B6CBF3B727F8EFF40049A5BD /* SkeletonView.swift */,
+			);
+			path = Skeleton;
+			sourceTree = "<group>";
+		};
+		B6CBF3B227F8EF5E0049A5BD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B6CBF3B327F8EF700049A5BD /* Skeleton.strings */,
+				B6CBF3B427F8EF700049A5BD /* SkeletonKeys.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B6CBF3BB27F8F6610049A5BD /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				B6CBF3B927F8F5150049A5BD /* SkeletonViewCell.swift */,
+				B6CBF3BC27F8F6800049A5BD /* ModeloCell.swift */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00D4618727F70CBE009418CD /* LaunchScreen.storyboard in Resources */,
+				B6CBF3B527F8EF700049A5BD /* Skeleton.strings in Resources */,
 				00D4619F27F71171009418CD /* Menu.strings in Resources */,
 				00D4618427F70CBE009418CD /* Assets.xcassets in Resources */,
 			);
@@ -263,16 +327,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				00D461A427F71208009418CD /* Localizable.swift in Sources */,
+				B6CBF3BD27F8F6800049A5BD /* ModeloCell.swift in Sources */,
+				B6CBF3A227F8EA5E0049A5BD /* MenuView.swift in Sources */,
+				B6CBF3B627F8EF700049A5BD /* SkeletonKeys.swift in Sources */,
 				00D4619B27F7112F009418CD /* MenuInteractor.swift in Sources */,
+				B6CBF3B127F8EF580049A5BD /* SkeletonInteractor.swift in Sources */,
+				B6CBF3A427F8EA930049A5BD /* ViewConfiguration.swift in Sources */,
 				00D4617B27F70CBE009418CD /* AppDelegate.swift in Sources */,
+				B6CBF3B027F8EF580049A5BD /* SkeletonViewController.swift in Sources */,
+				B6CBF3B827F8EFF40049A5BD /* SkeletonView.swift in Sources */,
+				B6CBF3BA27F8F5150049A5BD /* SkeletonViewCell.swift in Sources */,
+				B6CBF3AE27F8EF580049A5BD /* SkeletonRouter.swift in Sources */,
 				00D461A527F71208009418CD /* String+Extension.swift in Sources */,
 				00D4619727F7112F009418CD /* MenuWorker.swift in Sources */,
+				B6CBF3AC27F8EF580049A5BD /* SkeletonPresenter.swift in Sources */,
 				00D4617D27F70CBE009418CD /* SceneDelegate.swift in Sources */,
 				00D4619627F7112F009418CD /* MenuPresenter.swift in Sources */,
 				00D461A027F71171009418CD /* MenuKeys.swift in Sources */,
 				00D4619927F7112F009418CD /* MenuModels.swift in Sources */,
 				00D4619827F7112F009418CD /* MenuRouter.swift in Sources */,
 				00D4619A27F7112F009418CD /* MenuViewController.swift in Sources */,
+				B6CBF3AD27F8EF580049A5BD /* SkeletonWorker.swift in Sources */,
+				B6CBF3AF27F8EF580049A5BD /* SkeletonModels.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

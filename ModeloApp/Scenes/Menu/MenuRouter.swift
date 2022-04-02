@@ -8,7 +8,7 @@
 import UIKit
 
 @objc protocol MenuRoutingLogic {
-    func routeToSomewhere()
+    func routeToSkeletonView()
 }
 
 protocol MenuDataPassing {
@@ -24,11 +24,11 @@ final class MenuRouter: NSObject, MenuRoutingLogic, MenuDataPassing {
     
     // MARK: - Routing Logic
     
-    func routeToSomewhere() {
-        //let nextController = NextViewController()
+    func routeToSkeletonView() {
+        let nextViewController = SkeletonViewController()
         //var destinationDS = nextController.router?.dataStore
         //passDataToSomewhere(source: dataStore, destination: &destinationDS)
-        //viewController?.navigationController?.pushViewController(nextViewController, animated: true)
+        viewController?.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
     // MARK: - Passing data

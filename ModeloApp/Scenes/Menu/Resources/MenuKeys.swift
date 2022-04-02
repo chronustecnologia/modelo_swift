@@ -11,6 +11,7 @@ enum MenuKeys {
     
     enum Localized: String, Localizable {
         case title
+        case buttonSkeleton
         
         var tableName: String { "Menu" }
     }
