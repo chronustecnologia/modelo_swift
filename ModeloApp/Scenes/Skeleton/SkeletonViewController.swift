@@ -88,6 +88,10 @@ final class SkeletonViewController: UIViewController, SkeletonDisplayLogic {
 
 extension SkeletonViewController: SkeletonViewDelegate {
     
+    func didTapCollectionview(_ index: Int) {
+        
+    }
+    
     func didTapTableView(_ index: Int) {
         
     }
