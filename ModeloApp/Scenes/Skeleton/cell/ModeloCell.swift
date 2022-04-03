@@ -19,7 +19,7 @@ final class ModeloCell: UIView {
         view.lineBreakMode = .byWordWrapping
         view.font = UIFont.boldSystemFont(ofSize: 17)
         view.textColor = .black
-        view.text = "Lorem ipsum"
+        view.text = " "
         view.isSkeletonable = true
         return view
     }()
@@ -30,7 +30,7 @@ final class ModeloCell: UIView {
         view.lineBreakMode = .byWordWrapping
         view.font = UIFont.systemFont(ofSize: 15)
         view.textColor = .black
-        view.text = "Lorem ipsum"
+        view.text = " "
         view.isSkeletonable = true
         return view
     }()
@@ -60,9 +60,9 @@ final class ModeloCell: UIView {
     }
 }
 
-extension ModeloCell: ViewConfiguration {
+extension ModeloCell: ScreenViewProtocol {
     
-    func buildHierarchy() {
+    func addViewHierarchy() {
         addSubview(titleLabel)
         addSubview(subtitleLabel)
         addSubview(imageView)
@@ -90,7 +90,8 @@ extension ModeloCell: ViewConfiguration {
         }
     }
     
-    func configViews() {
+    func setupAdditional() {
+        self.backgroundColor = .clear
         self.isSkeletonable = true
     }
     

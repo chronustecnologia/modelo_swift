@@ -50,6 +50,11 @@ final class MenuViewController: UIViewController {
         loadScreenValues()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationItem.backButtonTitle = ""
+    }
+    
     // MARK: - Setup
     
     private func setup() {

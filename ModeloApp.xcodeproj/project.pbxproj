@@ -23,7 +23,7 @@
 		00D461A527F71208009418CD /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00D461A327F71208009418CD /* String+Extension.swift */; };
 		011E8A979FA7B7619502DE9D /* Pods_ModeloApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7286BBF106A11A854A3A215A /* Pods_ModeloApp.framework */; };
 		B6CBF3A227F8EA5E0049A5BD /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A127F8EA5E0049A5BD /* MenuView.swift */; };
-		B6CBF3A427F8EA930049A5BD /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A327F8EA930049A5BD /* ViewConfiguration.swift */; };
+		B6CBF3A427F8EA930049A5BD /* ScreenViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A327F8EA930049A5BD /* ScreenViewProtocol.swift */; };
 		B6CBF3AC27F8EF580049A5BD /* SkeletonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A627F8EF580049A5BD /* SkeletonPresenter.swift */; };
 		B6CBF3AD27F8EF580049A5BD /* SkeletonWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A727F8EF580049A5BD /* SkeletonWorker.swift */; };
 		B6CBF3AE27F8EF580049A5BD /* SkeletonRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3A827F8EF580049A5BD /* SkeletonRouter.swift */; };
@@ -35,6 +35,8 @@
 		B6CBF3B827F8EFF40049A5BD /* SkeletonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3B727F8EFF40049A5BD /* SkeletonView.swift */; };
 		B6CBF3BA27F8F5150049A5BD /* SkeletonViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3B927F8F5150049A5BD /* SkeletonViewCell.swift */; };
 		B6CBF3BD27F8F6800049A5BD /* ModeloCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3BC27F8F6800049A5BD /* ModeloCell.swift */; };
+		B6CBF3BF27FA4BAD0049A5BD /* PropertyInfoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CBF3BE27FA4BAD0049A5BD /* PropertyInfoService.swift */; };
+		B6CBF3C127FA50A50049A5BD /* Configs.plist in Resources */ = {isa = PBXBuildFile; fileRef = B6CBF3C027FA50A50049A5BD /* Configs.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,7 +58,7 @@
 		00D461A327F71208009418CD /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
 		7286BBF106A11A854A3A215A /* Pods_ModeloApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ModeloApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6CBF3A127F8EA5E0049A5BD /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		B6CBF3A327F8EA930049A5BD /* ViewConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		B6CBF3A327F8EA930049A5BD /* ScreenViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScreenViewProtocol.swift; sourceTree = "<group>"; };
 		B6CBF3A627F8EF580049A5BD /* SkeletonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonPresenter.swift; sourceTree = "<group>"; };
 		B6CBF3A727F8EF580049A5BD /* SkeletonWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonWorker.swift; sourceTree = "<group>"; };
 		B6CBF3A827F8EF580049A5BD /* SkeletonRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonRouter.swift; sourceTree = "<group>"; };
@@ -68,6 +70,8 @@
 		B6CBF3B727F8EFF40049A5BD /* SkeletonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonView.swift; sourceTree = "<group>"; };
 		B6CBF3B927F8F5150049A5BD /* SkeletonViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonViewCell.swift; sourceTree = "<group>"; };
 		B6CBF3BC27F8F6800049A5BD /* ModeloCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeloCell.swift; sourceTree = "<group>"; };
+		B6CBF3BE27FA4BAD0049A5BD /* PropertyInfoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyInfoService.swift; sourceTree = "<group>"; };
+		B6CBF3C027FA50A50049A5BD /* Configs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Configs.plist; sourceTree = "<group>"; };
 		BCECDBD1BECE0272CA8A680C /* Pods-ModeloApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModeloApp.release.xcconfig"; path = "Target Support Files/Pods-ModeloApp/Pods-ModeloApp.release.xcconfig"; sourceTree = "<group>"; };
 		BE68E9CD580CC13E1657C086 /* Pods-ModeloApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModeloApp.debug.xcconfig"; path = "Target Support Files/Pods-ModeloApp/Pods-ModeloApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,6 +115,7 @@
 				00D4617C27F70CBE009418CD /* SceneDelegate.swift */,
 				00D4618327F70CBE009418CD /* Assets.xcassets */,
 				00D4618527F70CBE009418CD /* LaunchScreen.storyboard */,
+				B6CBF3C027FA50A50049A5BD /* Configs.plist */,
 				00D4618827F70CBE009418CD /* Info.plist */,
 			);
 			path = ModeloApp;
@@ -154,7 +159,8 @@
 			children = (
 				00D461A227F71208009418CD /* Localizable.swift */,
 				00D461A327F71208009418CD /* String+Extension.swift */,
-				B6CBF3A327F8EA930049A5BD /* ViewConfiguration.swift */,
+				B6CBF3A327F8EA930049A5BD /* ScreenViewProtocol.swift */,
+				B6CBF3BE27FA4BAD0049A5BD /* PropertyInfoService.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -270,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6CBF3C127FA50A50049A5BD /* Configs.plist in Resources */,
 				00D4618727F70CBE009418CD /* LaunchScreen.storyboard in Resources */,
 				B6CBF3B527F8EF700049A5BD /* Skeleton.strings in Resources */,
 				00D4619F27F71171009418CD /* Menu.strings in Resources */,
@@ -332,7 +339,7 @@
 				B6CBF3B627F8EF700049A5BD /* SkeletonKeys.swift in Sources */,
 				00D4619B27F7112F009418CD /* MenuInteractor.swift in Sources */,
 				B6CBF3B127F8EF580049A5BD /* SkeletonInteractor.swift in Sources */,
-				B6CBF3A427F8EA930049A5BD /* ViewConfiguration.swift in Sources */,
+				B6CBF3A427F8EA930049A5BD /* ScreenViewProtocol.swift in Sources */,
 				00D4617B27F70CBE009418CD /* AppDelegate.swift in Sources */,
 				B6CBF3B027F8EF580049A5BD /* SkeletonViewController.swift in Sources */,
 				B6CBF3B827F8EFF40049A5BD /* SkeletonView.swift in Sources */,
@@ -340,6 +347,7 @@
 				B6CBF3AE27F8EF580049A5BD /* SkeletonRouter.swift in Sources */,
 				00D461A527F71208009418CD /* String+Extension.swift in Sources */,
 				00D4619727F7112F009418CD /* MenuWorker.swift in Sources */,
+				B6CBF3BF27FA4BAD0049A5BD /* PropertyInfoService.swift in Sources */,
 				B6CBF3AC27F8EF580049A5BD /* SkeletonPresenter.swift in Sources */,
 				00D4617D27F70CBE009418CD /* SceneDelegate.swift in Sources */,
 				00D4619627F7112F009418CD /* MenuPresenter.swift in Sources */,

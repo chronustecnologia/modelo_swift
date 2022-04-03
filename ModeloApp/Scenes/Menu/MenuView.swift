@@ -19,6 +19,7 @@ final class MenuView: UIView {
         view.setTitle(MenuKeys.Localized.buttonSkeleton.string(), for: .normal)
         view.titleLabel?.textColor = .white
         view.addTarget(self, action: #selector(didTapSkeletonView), for: .touchUpInside)
+        view.isHidden = !PropertyInfoService.shared.bool(key: "showSkeletonView")
         return view
     }()
     
@@ -38,9 +39,9 @@ final class MenuView: UIView {
     }
 }
 
-extension MenuView: ViewConfiguration {
+extension MenuView: ScreenViewProtocol {
     
-    func buildHierarchy() {
+    func addViewHierarchy() {
         addSubview(buttonSkeleton)
     }
     
@@ -53,7 +54,7 @@ extension MenuView: ViewConfiguration {
         }
     }
     
-    func configViews() {
+    func setupAdditional() {
         backgroundColor = .white
     }
 }

@@ -9,7 +9,7 @@ import UIKit
 import SkeletonView
 
 protocol SkeletonViewDelegate: AnyObject {
-    
+    func didTapTableView(_ index: Int)
 }
 
 final class SkeletonView: UIView {
@@ -45,13 +45,13 @@ final class SkeletonView: UIView {
     
     func showLoading() {
         tableView.reloadData()
-        tableView.showAnimatedSkeleton()
+        tableView.showAnimatedGradientSkeleton()
     }
 }
 
-extension SkeletonView: ViewConfiguration {
+extension SkeletonView: ScreenViewProtocol {
     
-    func buildHierarchy() {
+    func addViewHierarchy() {
         addSubview(tableView)
     }
     
@@ -64,7 +64,7 @@ extension SkeletonView: ViewConfiguration {
         }
     }
     
-    func configViews() {
+    func setupAdditional() {
         backgroundColor = .white
     }
     
@@ -89,6 +89,7 @@ extension SkeletonView: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        delegate?.didTapTableView(indexPath.row)
     }
 }
 
@@ -100,11 +101,5 @@ extension SkeletonView: SkeletonTableViewDataSource {
     
     func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
         return SkeletonViewCell.identifier
-    }
-    
-    func collectionSkeletonView(_ skeletonView: UITableView, skeletonCellForRowAt indexPath: IndexPath) -> UITableViewCell? {
-        let cell = skeletonView.dequeueReusableCell(withIdentifier: SkeletonViewCell.identifier, for: indexPath) as! SkeletonViewCell
-        cell.isSkeletonable = true
-        return cell
     }
 }

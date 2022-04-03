@@ -14,7 +14,6 @@ final class SkeletonViewCell: UITableViewCell {
     
     private lazy var modeloCell: ModeloCell = {
         let view = ModeloCell()
-        view.backgroundColor = .clear
         return view
     }()
     
@@ -32,9 +31,9 @@ final class SkeletonViewCell: UITableViewCell {
     }
 }
 
-extension SkeletonViewCell: ViewConfiguration {
+extension SkeletonViewCell: ScreenViewProtocol {
     
-    func buildHierarchy() {
+    func addViewHierarchy() {
         contentView.addSubview(modeloCell)
     }
     
@@ -44,8 +43,8 @@ extension SkeletonViewCell: ViewConfiguration {
         }
     }
     
-    func configViews() {
-        //self.isSkeletonable = true
+    func setupAdditional() {
+        self.isSkeletonable = true
     }
     
 }
